@@ -1,0 +1,35 @@
+<!-- Write a script to define two JSON objects named as “division1” 
+ and “division2” having an array to store name of students. 
+ These names should be sorted alphabetically and should be 
+ displayed in console. -->
+
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var test = {
+            "division1": {
+                "name":["Z","B","H"]
+            },
+            "division2": {
+                "name" :["Y","A","G"]
+            }
+        }
+        
+        const a = test.division1.name
+        const b = test.division2.name
+
+        const comb = a.concat(b).sort()
+        document.write(comb)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

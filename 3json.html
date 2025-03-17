@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var a = {
+        "FSD": [
+          {
+            "Topic": "HTML",
+            "course": "Beginer",
+            "content": ["tags", "table", "form"],
+          },
+          {
+            "Topic": "CSS",
+            "course": "Beginer",
+            "content": ["tags", "table", "form"]
+          }
+        ]
+      }
+    
+      console.log(a.FSD[0].content[1])
+
+      console.log(a.FSD[1].Topic)
+      console.log(a.FSD[1].content[2])
+
+
+      for(x in a.FSD){
+        for(y in a.FSD[x]){
+            document.write(a.FSD[x][y] + "<br>")
+        }
+      }
+</script>
+<body>
+    
+</body>
+</html>
