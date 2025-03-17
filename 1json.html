@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var k = {
+            "name" : "test",  //string
+            "age" : 20,       //number
+            "subjects" : {"FSD2" : "NAS" , "FCSP2" : "VHA"},   //object
+            "marks" : [25,22],    //array
+            "present" : true,     //boolean
+            "exam" : null         
+        }
+
+        console.log(k)
+
+        console.log(k.name)
+        console.log(k['name'])
+
+        console.log(k.subjects.FCSP2)
+
+        console.log(k.marks[1])
+
+        let jString = JSON.stringify(k)
+        console.log(jString);
+        console.log(jString.name);   //UNDEFINED : coz you can't access key after stringify 
+
+        var a = JSON.stringify( {"t1":20, "t2":25} )
+        console.log(a)
+
+        let oobj = JSON.parse(jString);
+        console.log(oobj.age);
+        console.log(oobj)
+
+        let b = JSON.parse( '{"t3":20, "t4":18}' )
+        console.log(b)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
