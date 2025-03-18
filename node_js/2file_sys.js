@@ -19,4 +19,4 @@ console.log(data.toString())
 
 fs.renameSync("node/rw.txt","node/write.txt")
 fs.writeFileSync("node/write.txt","test");
-fs.unlinkSync("node/write.txt");
+//fs.unlinkSync("node/write.txt");
