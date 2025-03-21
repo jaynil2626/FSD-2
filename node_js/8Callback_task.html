@@ -1,0 +1,60 @@
+<!-- write code to increase the size of font upto 50px after every 1 sec  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: relative;
+            height: 510px;
+            overflow-y: scroll;
+          }
+    </style>
+ </head>
+ <body>
+    <div style="height:600px">
+    <div style="height:300px">
+    <p id="test" style="font-size:15px">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro sapiente reprehenderit, nihil et eum a voluptatibus nam sunt mollitia nemo ut accusantium dolorum officia maiores illo inventore quae voluptate repudiandae qui laborum animi minus adipisci? Doloribus a harum voluptatum eaque velit dicta rem commodi itaque doloremque, minima illo quaerat ipsa incidunt error. Ex, commodi vero repellat nemo cumque distinctio, aut, iste earum omnis maiores voluptates modi error! Nam, nesciunt quos, quis accusantium placeat, repellat magnam eum explicabo possimus eos nobis cupiditate beatae quae repellendus fugit minus deleniti corporis ad laudantium architecto laboriosam voluptates totam consectetur iste. Dolores voluptate dolor expedita, quod alias fuga possimus rerum. Esse, quod exercitationem reiciendis, modi reprehenderit eum sint enim, minima eligendi fugiat harum sunt. Quo eos nostrum nisi, doloribus eum, aspernatur saepe ad placeat, corporis blanditiis eligendi ipsum veritatis quasi. Rem maxime voluptatem explicabo tempore id architecto provident ex adipisci dolor quia aliquam cum totam, deleniti expedita, inventore non natus consequatur. Repellendus alias deserunt pariatur enim maxime vero numquam. Ad ipsa quidem ducimus magni officiis earum sunt eaque soluta! Eius nihil eveniet error accusamus ut ea nostrum architecto fugiat aspernatur quidem tenetur sint, recusandae culpa praesentium laudantium ratione consectetur, iste suscipit animi numquam? Architecto, magnam!</p>
+    <script>
+        size=15;
+        function func(){
+            document.getElementById('test').style.fontSize = size+"px";
+            if(size <= 50){
+                size++
+            }
+        }
+
+        setInterval(func,1000)
+    </script>
+    </div>
+
+    <div style="height:300px">
+        <button onclick="funci()">Click to Increase</button>
+        <button onclick="funcu()">Click to decrease</button>
+        <p id="test2" style="font-size:15px">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur eveniet ipsa enim, deleniti ea totam, harum fugiat ducimus aspernatur dicta corporis, officia exercitationem repudiandae. Recusandae illo, sunt quod minima nemo consectetur exercitationem aspernatur. Unde, non aliquid pariatur eveniet consectetur eum necessitatibus quo exercitationem laboriosam earum iure iste quibusdam debitis praesentium possimus. Dolore vero omnis eveniet esse saepe dolorem voluptatem quae, veniam architecto aut minima nulla nobis quis odio asperiores explicabo eum modi ullam ea possimus placeat aperiam labore. Animi sed cupiditate tempore. Praesentium necessitatibus quod nisi nostrum omnis repellendus perferendis optio sed, minus reiciendis cum quis vitae aspernatur minima eaque. Saepe velit veniam nulla omnis accusamus? Labore porro suscipit expedita, nostrum ducimus laborum, nisi quae dignissimos iure vitae eius voluptatibus modi aut a distinctio. Ea sapiente voluptate, sed enim minima, corporis quam optio a mollitia accusamus qui! Soluta nisi eius quidem quos aliquid, dignissimos quis accusamus a, sint, blanditiis ipsam mollitia dolore. Ut provident nisi officiis odio, qui ullam corrupti, fugiat alias illum quo aspernatur. Aspernatur ad commodi, laborum corrupti fuga iste optio! Harum odit amet qui atque dolor iste delectus sit sequi, repellendus quasi culpa nisi dolores consequuntur nam incidunt excepturi natus reiciendis numquam sunt nemo minima quibusdam eum.</p>
+        
+
+        <script>
+            size2=15;
+        function funci(){
+            if(size2 <= 50){
+                size2++
+            }
+            document.getElementById('test2').style.fontSize = size2+"px";
+        }
+
+
+        function funcu(){
+            if(size2 <= 50){
+                size2--
+            }
+            document.getElementById('test2').style.fontSize = size2+"px";
+        }
+        
+        </script>
+    </div>
+</div>
+ </body>
+ </html>
