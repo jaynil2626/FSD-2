@@ -1,0 +1,11 @@
+.test{color:blue;
+    text-align: center;
+    font-size:60px;}
+/* .third{width:100px; height:100px; background-color:red; transition-property:width,background-color;transition-duration: 2s;transition-delay: 200ms;}
+.third:hover{width:400px;background-color: rgb(235, 165, 165);} */
+
+.third{width:300px;margin: 20%;; height:300px; background-color: cyan; animation-duration:2s; animation-name:abc; animation-iteration-count: infinite; animation-direction: alternate}
+        @keyframes abc{
+            from {width:1px; height:1px; background-color: cyan;}
+            to {width:200px; height:200px; background-color: red; transform: rotate(1080deg);}
+        }
