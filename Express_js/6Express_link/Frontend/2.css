@@ -17,6 +17,6 @@
     0% {background-color: sandybrown; top:0px; left:0px;}
     50% {background-color: salmon; top:200px; left:300px; transform:rotate(540deg)}
     75% {background-color: sandybrown; top:0px; left:450px; transform: rotate(1080deg)}
-    100% {background-color: sandybrown; top:0px; left:0px; transform: rotate(720deg)}
+    100% {background-color: sandybrown; top:0px; left:0px; transform: rotate(360deg)}
 
 }
